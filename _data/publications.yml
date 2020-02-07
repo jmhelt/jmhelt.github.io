@@ -1,0 +1,16 @@
+- title: "Sandpaper: Mitigating Performance Interference in CDN Edge Proxies"
+  authors: Jeffrey Helt, Guoyao Feng, Srinivasan Seshan, Vyas Sekar
+  venue_prefix: "In Proc."
+  venue: 4th ACM/IEEE Symposium on Edge Computing
+  venue_link: http://acm-ieee-sec.org/2019/
+  year: 2019
+  paper: helt-sandpaper-2019.pdf
+
+- title: "Alembic: Automated Model Inference for Stateful Network Functions"
+  authors: Soo-Jin Moon, Jeffrey Helt, Yifei Yuan, Yves Bieri, Sujata Banerjee, Vyas Sekar, Wenfei Wu, Mihalis Yannakakis, Ying Zhang
+  venue_prefix: "In Proc."
+  venue: 16th USENIX Symposium on Networked Systems Design and Implementation
+  venue_link: https://www.usenix.org/conference/nsdi19/
+  year: 2019
+  paper: moon-alembic-2019.pdf
+  slides: moon-alembic-2019-slides.pdf
