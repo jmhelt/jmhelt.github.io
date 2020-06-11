@@ -1,0 +1,51 @@
+html {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+.content {
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    margin-left: auto;
+}
+
+@media (min-width: 48em) {
+    .content {
+	      margin-left: 20em;
+    }
+}
+
+.sidebar {
+    background-color: #191D32;
+}
+
+.sidebar #profile-photo {
+    height: 13.2em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 48em) {
+    .sidebar #profile-photo {
+	      margin: 0;
+	      margin-bottom: 1em;
+    }
+}
+
+.sidebar .site-title {
+    font-size: 2.4rem;
+}
+
+.sidebar .lead {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.homepage-content h2 {
+    margin-top: 1.25em;
+}
+
+.homepage-content ul {
+    padding-left: 2rem;
+}
