@@ -8,6 +8,8 @@ html {
     padding-bottom: 2em;
 
     margin-left: auto;
+
+    max-width: 42em;
 }
 
 @media (min-width: 48em) {
