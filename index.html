@@ -11,8 +11,8 @@
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
       font-size: 16px;
       line-height: 1.6;
-      color: #222;
-      background: #fff;
+      color: #e8f0e8;
+      background: #1e3a2a;
       margin: 0;
       padding: 0;
     }
@@ -25,18 +25,7 @@
 
     /* ── Header ── */
     .profile {
-      display: flex;
-      gap: 36px;
-      align-items: flex-start;
       margin-bottom: 40px;
-    }
-
-    .profile img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      flex-shrink: 0;
     }
 
     .profile-info {
@@ -52,7 +41,7 @@
 
     .profile-info .subtitle {
       margin: 0 0 14px;
-      color: #555;
+      color: #a8c8a8;
       font-size: 1em;
     }
 
@@ -64,7 +53,7 @@
     }
 
     .profile-links a {
-      color: #1558b0;
+      color: #7ec8a0;
       text-decoration: none;
     }
 
@@ -78,8 +67,8 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      color: #444;
-      border-bottom: 1px solid #ddd;
+      color: #a8c8a8;
+      border-bottom: 1px solid #2e5a3a;
       padding-bottom: 5px;
       margin: 40px 0 18px;
     }
@@ -101,57 +90,46 @@
       font-weight: 600;
     }
 
+    .pub-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .pub-title a:hover {
+      text-decoration: underline;
+    }
+
+    a {
+      color: #7ec8a0;
+    }
+
+    a:hover {
+      color: #a8dfc0;
+    }
+
     .pub-authors {
-      color: #444;
+      color: #a8c8a8;
       font-size: 0.92em;
     }
 
     .pub-venue {
-      color: #444;
+      color: #a8c8a8;
       font-size: 0.92em;
       font-style: italic;
     }
 
-    .pub-links {
-      margin-top: 2px;
-      font-size: 0.88em;
-    }
-
-    .pub-links a {
-      color: #1558b0;
-      text-decoration: none;
-      margin-right: 10px;
-    }
-
-    .pub-links a:hover {
-      text-decoration: underline;
-    }
-
-    /* ── Responsive ── */
-    @media (max-width: 520px) {
-      .profile {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      .profile-links {
-        justify-content: center;
-      }
-    }
   </style>
 </head>
 <body>
 <div class="container">
 
   <div class="profile">
-    <img src="images/profile-photo.jpeg" alt="Jeffrey Helt">
     <div class="profile-info">
       <h1>Jeffrey Helt</h1>
-      <p class="subtitle">Senior Software Engineer · Databricks</p>
+      <p class="subtitle">Software Engineer · Databricks</p>
       <div class="profile-links">
+        <a href="mailto:jhelt@cs.princeton.edu">Email</a>
         <a href="https://scholar.google.com/citations?user=g4vbw9gAAAAJ&hl=en">Google Scholar</a>
-        <a href="https://www.linkedin.com/in/jeffrey-helt">LinkedIn</a>
-        <a href="https://github.com/jmhelt">GitHub</a>
         <a href="/cv.pdf">CV</a>
       </div>
     </div>
@@ -159,14 +137,12 @@
 
   <h2>About</h2>
   <p>
-    I am a Senior Software Engineer at <a href="https://www.databricks.com/">Databricks</a>,
-    working on <a href="https://www.databricks.com/product/delta-live-tables">Delta Live Tables</a>
-    and <a href="https://arxiv.org/abs/2603.27775">Enzyme</a>, a system for incremental view maintenance
-    in data engineering pipelines.
+    I am a Software Engineer at <a href="https://www.databricks.com/">Databricks</a>,
+    working on <a href="https://arxiv.org/abs/2603.27775">Enzyme</a>, a system for incremental view maintenance.
     Previously, I was a PhD student in Computer Science at
     <a href="https://www.cs.princeton.edu/">Princeton University</a>, advised by Professor
     <a href="https://www.cs.princeton.edu/~wlloyd/">Wyatt Lloyd</a>.
-    My dissertation research focused on consistency models for distributed storage systems.
+    My dissertation research focused on consistency models and concurrency control for distributed databases.
   </p>
   <p>
     Before my PhD, I earned an MS in Computer Science from
@@ -180,81 +156,45 @@
   <ul class="pub-list">
 
     <li>
-      <div class="pub-title">Enzyme: Incremental View Maintenance for Data Engineering</div>
+      <div class="pub-title"><a href="https://arxiv.org/abs/2603.27775">Enzyme: Incremental View Maintenance for Data Engineering</a></div>
       <div class="pub-authors">R. Yadav, S. Abeysinghe, M. Yang, J. Helt, M. Ung, Y. Chen, M. Hu, W. Wei, et al.</div>
       <div class="pub-venue">arXiv preprint, 2026</div>
-      <div class="pub-links">
-        <a href="https://arxiv.org/abs/2603.27775">[arXiv]</a>
-      </div>
     </li>
 
     <li>
-      <div class="pub-title">C5: Cloned Concurrency Control that Always Keeps Up</div>
+      <div class="pub-title"><a href="https://arxiv.org/abs/2207.02746">C5: Cloned Concurrency Control that Always Keeps Up</a></div>
       <div class="pub-authors">Jeffrey Helt, Abhinav Sharma, Daniel J. Abadi, Wyatt Lloyd, Jose M. Faleiro</div>
       <div class="pub-venue">The VLDB Journal, 34(2), 2025</div>
-      <div class="pub-links">
-        <a href="https://arxiv.org/abs/2207.02746">[arXiv]</a>
-      </div>
     </li>
 
     <li>
-      <div class="pub-title">TurboDB: Conquering Skewed Workloads by Integrating a Single-Machine Database Into a Distributed Database</div>
+      <div class="pub-title"><a href="/papers/lam-turbodb-2024.pdf">TurboDB: Conquering Skewed Workloads by Integrating a Single-Machine Database Into a Distributed Database</a></div>
       <div class="pub-authors">Jennifer Lam, Jeffrey Helt, Wyatt Lloyd, Haonan Lu</div>
       <div class="pub-venue">21st USENIX Symposium on Networked Systems Design and Implementation (NSDI), 2024</div>
     </li>
 
     <li>
-      <div class="pub-title">C5: Cloned Concurrency Control that Always Keeps Up</div>
+      <div class="pub-title"><a href="https://arxiv.org/abs/2207.02746">C5: Cloned Concurrency Control that Always Keeps Up</a></div>
       <div class="pub-authors">Jeffrey Helt, Abhinav Sharma, Daniel J. Abadi, Wyatt Lloyd, Jose M. Faleiro</div>
       <div class="pub-venue">49th International Conference on Very Large Data Bases (VLDB), 2023</div>
-      <div class="pub-links">
-        <a href="/papers/helt-c5-2023.pdf">[paper]</a>
-        <a href="https://arxiv.org/abs/2207.02746">[arXiv]</a>
-      </div>
     </li>
 
     <li>
-      <div class="pub-title">Morty: Scaling Concurrency Control with Re-Execution</div>
+      <div class="pub-title"><a href="/papers/burke-morty-2023.pdf">Morty: Scaling Concurrency Control with Re-Execution</a></div>
       <div class="pub-authors">Matthew Burke, Florian Suri-Payer, Jeffrey Helt, Lorenzo Alvisi, Natacha Crooks</div>
       <div class="pub-venue">18th European Conference on Computer Systems (EuroSys), 2023</div>
-      <div class="pub-links">
-        <a href="/papers/burke-morty-2023.pdf">[paper]</a>
-      </div>
     </li>
 
     <li>
-      <div class="pub-title">Regular Sequential Serializability and Regular Sequential Consistency</div>
+      <div class="pub-title"><a href="https://arxiv.org/abs/2109.08930">Regular Sequential Serializability and Regular Sequential Consistency</a></div>
       <div class="pub-authors">Jeffrey Helt, Matthew Burke, Amit Levy, Wyatt Lloyd</div>
       <div class="pub-venue">28th ACM SIGOPS Symposium on Operating Systems Principles (SOSP), 2021</div>
-      <div class="pub-links">
-        <a href="/papers/helt-rss-2021.pdf">[paper]</a>
-        <a href="https://arxiv.org/abs/2109.08930">[arXiv]</a>
-        <a href="https://www.youtube.com/watch?v=GauK7QhaAEQ">[talk]</a>
-      </div>
     </li>
 
     <li>
-      <div class="pub-title">The Dangers of Logical Replication and a Practical Solution</div>
-      <div class="pub-authors">Jose M. Faleiro, Daniel Abadi, Jeffrey Helt, Wyatt Lloyd, Abhinav Sharma</div>
-      <div class="pub-venue">18th International Workshop on High Performance Transaction Systems (HPTS), 2019</div>
-    </li>
-
-    <li>
-      <div class="pub-title">Alembic: Automated Model Inference for Stateful Network Functions</div>
+      <div class="pub-title"><a href="/papers/moon-alembic-2019.pdf">Alembic: Automated Model Inference for Stateful Network Functions</a></div>
       <div class="pub-authors">Soo-Jin Moon, Jeffrey Helt, Yifei Yuan, Yves Bieri, Sujata Banerjee, Vyas Sekar, Wenfei Wu, Mihalis Yannakakis, Ying Zhang</div>
       <div class="pub-venue">16th USENIX Symposium on Networked Systems Design and Implementation (NSDI), 2019</div>
-      <div class="pub-links">
-        <a href="/papers/moon-alembic-2019.pdf">[paper]</a>
-      </div>
-    </li>
-
-    <li>
-      <div class="pub-title">Sandpaper: Mitigating Performance Interference in CDN Edge Proxies</div>
-      <div class="pub-authors">Jeffrey Helt, Guoyao Feng, Srinivasan Seshan, Vyas Sekar</div>
-      <div class="pub-venue">4th ACM/IEEE Symposium on Edge Computing (SEC), 2019</div>
-      <div class="pub-links">
-        <a href="/papers/helt-sandpaper-2019.pdf">[paper]</a>
-      </div>
     </li>
 
   </ul>
